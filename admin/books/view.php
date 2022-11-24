@@ -14,7 +14,6 @@ if(isset($_GET['id'])){
 </style>
 <p><b>Package:</b> <?php echo $title ?></p>
 <p><b>Details:</b> <span class="truncate"><?php echo strip_tags(stripslashes(html_entity_decode($title))) ?></span></p>
-<p><b>Schedule:</b> <?php echo date("F d, Y",strtotime("schedule")) ?></p>
 <form action="" id="book-status">
     <input type="hidden" name="id" value="<?php echo $id ?>">
     <div class="form-group">
